@@ -1,20 +1,4 @@
-export function ScoreBadge({ match, selectedTeamId }) {
-  if (new Date().getTime() <= new Date(match?.timestamp).getTime()) return null;
-
-  let score;
-  let bgColor = "#FF0000";
-  const { homeScore, awayScore } = match;
-
-  homeScore === awayScore && (bgColor = "#AFAFAF");
-
-  if (match.homeTeam.id === selectedTeamId) {
-    score = `${homeScore} - ${awayScore}`;
-    homeScore > awayScore && (bgColor = "#00BF00");
-  } else {
-    score = `${awayScore} - ${homeScore}`;
-    awayScore > homeScore && (bgColor = "#00BF00");
-  }
-
+export function ScoreBadge({ bgColor, score }) {
   return (
     <div>
       <style jsx>{`

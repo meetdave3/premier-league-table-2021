@@ -24,27 +24,6 @@ async function getTableData() {
   }
 }
 
-export const getMatchesForTeamQuery = `
-  query StatsTeamMatches($teamId: Int!, $stageId: Int!) {
-    matchesForTeam(teamId: $teamId, stageId: $stageId) {
-      id
-      name
-      groupName
-      yearStart
-      yearEnd
-      hasTable
-      tournament {
-        id
-        title
-      }
-      matches {
-        ...graphStatsTeamMatch
-      }
-    }
-  }
-  ${matchFragments}
-`;
-
 async function getMatches(teamId) {
   try {
     const { data } = await fetchFromGraph({

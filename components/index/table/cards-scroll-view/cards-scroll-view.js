@@ -20,7 +20,7 @@ function Cards({ selectedTeamId }) {
   const [error, seterror] = React.useState(null);
 
   React.useEffect(async () => {
-    async function fetch() {
+    async function fetchMatches() {
       setloading(true);
 
       try {
@@ -31,7 +31,7 @@ function Cards({ selectedTeamId }) {
         setloading(false);
 
         if (document) {
-          const element = document.getElementById(21);
+          const element = document.getElementById(24);
           element.scrollIntoView({
             behavior: "smooth",
             block: "center",
@@ -43,11 +43,11 @@ function Cards({ selectedTeamId }) {
       }
     }
 
-    fetch();
+    fetchMatches();
   }, [selectedTeamId]);
 
   if (error) {
-    return Error(error);
+    return Error(error); // Because Error boundaries can only catch errors in lifecycle methods
   }
 
   if (loading === true) {

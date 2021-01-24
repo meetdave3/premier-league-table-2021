@@ -31,11 +31,7 @@ export function Table({ tableData }) {
                 <td colSpan="4">
                   <div
                     onClick={() => setselectedTeamId(t.id)}
-                    style={{
-                      display: "flex",
-                      placeItems: "center",
-                      cursor: "pointer",
-                    }}
+                    className={styles.team}
                   >
                     <p>{t.name}</p>
                     {t.id === selectedTeamId && <RenderArrow />}
