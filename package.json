@@ -1,5 +1,5 @@
 {
-  "name": "tv2",
+  "name": "premier-league-table-2021",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,9 @@
   "dependencies": {
     "next": "10.0.5",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-error-boundary": "3.1.0",
+    "react-content-loader": "6.0.1",
+    "react-dom": "17.0.1",
+    "@fontsource/pt-sans": "4.1.0"
   }
 }

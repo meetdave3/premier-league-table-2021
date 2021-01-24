@@ -1,0 +1,22 @@
+.card {
+  border-radius: 5px;
+  border: 2px solid #e5e5e5;
+  padding: 10px 30px;
+  width: fit-content;
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+.fixture {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: max-content;
+}
+
+.date {
+  width: max-content;
+}

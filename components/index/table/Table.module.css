@@ -1,0 +1,47 @@
+.wrapper {
+  padding: 50px;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table * {
+  text-align: left;
+}
+
+.table th {
+  font-size: 30px;
+  font-weight: 700;
+  color: #3a0640;
+}
+
+.table th {
+  font-size: 22px;
+  font-weight: 700;
+  color: #3a0640;
+}
+
+.table td {
+  font-size: 20px;
+  font-weight: 700;
+  color: #3a0640;
+  opacity: 0.8;
+  padding: 8px 0px;
+}
+
+.table thead tr {
+  border-bottom: 100px solid white;
+}
+
+.cardsList {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll !important;
+  padding: 20px 0px;
+}
+
+.cardsList div {
+  margin-right: 20px;
+}
