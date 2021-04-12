@@ -31,7 +31,7 @@ function Cards({ selectedTeamId }) {
         setloading(false);
 
         if (document) {
-          const element = document.getElementById(24);
+          const element = document.getElementById(31);
           element.scrollIntoView({
             behavior: "smooth",
             block: "center",
